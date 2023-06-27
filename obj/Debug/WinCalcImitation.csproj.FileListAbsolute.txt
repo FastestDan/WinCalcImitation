@@ -1,0 +1,11 @@
+C:\C#\WinCalcImitation\bin\Debug\WinCalcImitation.exe.config
+C:\C#\WinCalcImitation\bin\Debug\WinCalcImitation.exe
+C:\C#\WinCalcImitation\bin\Debug\WinCalcImitation.pdb
+C:\C#\WinCalcImitation\obj\Debug\WinCalcImitation.csproj.AssemblyReference.cache
+C:\C#\WinCalcImitation\obj\Debug\WinCalcImitation.csproj.SuggestedBindingRedirects.cache
+C:\C#\WinCalcImitation\obj\Debug\WinCalcImitation.Properties.Resources.resources
+C:\C#\WinCalcImitation\obj\Debug\WinCalcImitation.csproj.GenerateResource.cache
+C:\C#\WinCalcImitation\obj\Debug\WinCalcImitation.csproj.CoreCompileInputs.cache
+C:\C#\WinCalcImitation\obj\Debug\WinCalcImitation.exe
+C:\C#\WinCalcImitation\obj\Debug\WinCalcImitation.pdb
+C:\C#\WinCalcImitation\obj\Debug\WinCalcImitation.Form1.resources
