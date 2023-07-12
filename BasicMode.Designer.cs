@@ -61,6 +61,8 @@
             this.textcurval = new System.Windows.Forms.TextBox();
             this.textallops = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.texterror = new System.Windows.Forms.TextBox();
+            this.textMem = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -314,6 +316,7 @@
             this.btn_mc.TabIndex = 28;
             this.btn_mc.Text = "MC";
             this.btn_mc.UseVisualStyleBackColor = true;
+            this.btn_mc.Click += new System.EventHandler(this.btn_memory_Click);
             // 
             // btn_mr
             // 
@@ -323,6 +326,7 @@
             this.btn_mr.TabIndex = 29;
             this.btn_mr.Text = "MR";
             this.btn_mr.UseVisualStyleBackColor = true;
+            this.btn_mr.Click += new System.EventHandler(this.btn_memory_Click);
             // 
             // btn_ms
             // 
@@ -332,6 +336,7 @@
             this.btn_ms.TabIndex = 30;
             this.btn_ms.Text = "MS";
             this.btn_ms.UseVisualStyleBackColor = true;
+            this.btn_ms.Click += new System.EventHandler(this.btn_memory_Click);
             // 
             // btn_mplus
             // 
@@ -342,6 +347,7 @@
             this.btn_mplus.TabIndex = 31;
             this.btn_mplus.Text = "M+";
             this.btn_mplus.UseVisualStyleBackColor = true;
+            this.btn_mplus.Click += new System.EventHandler(this.btn_memop_Click);
             // 
             // btn_mminus
             // 
@@ -351,16 +357,17 @@
             this.btn_mminus.TabIndex = 32;
             this.btn_mminus.Text = "M-";
             this.btn_mminus.UseVisualStyleBackColor = true;
+            this.btn_mminus.Click += new System.EventHandler(this.btn_memop_Click);
             // 
             // textcurval
             // 
             this.textcurval.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textcurval.Font = new System.Drawing.Font("Segoe UI", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textcurval.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textcurval.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.textcurval.Location = new System.Drawing.Point(0, 35);
+            this.textcurval.Location = new System.Drawing.Point(71, 51);
             this.textcurval.Name = "textcurval";
             this.textcurval.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textcurval.Size = new System.Drawing.Size(404, 88);
+            this.textcurval.Size = new System.Drawing.Size(332, 72);
             this.textcurval.TabIndex = 0;
             this.textcurval.Text = "0";
             this.textcurval.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -379,12 +386,40 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Window;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.texterror);
+            this.panel1.Controls.Add(this.textMem);
             this.panel1.Controls.Add(this.textallops);
             this.panel1.Controls.Add(this.textcurval);
             this.panel1.Location = new System.Drawing.Point(22, 62);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(404, 124);
             this.panel1.TabIndex = 33;
+            // 
+            // texterror
+            // 
+            this.texterror.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.texterror.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.texterror.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.texterror.Location = new System.Drawing.Point(67, 79);
+            this.texterror.Name = "texterror";
+            this.texterror.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.texterror.Size = new System.Drawing.Size(332, 40);
+            this.texterror.TabIndex = 3;
+            this.texterror.Text = "Делить на ноль нельзя";
+            this.texterror.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.texterror.Visible = false;
+            // 
+            // textMem
+            // 
+            this.textMem.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textMem.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textMem.Location = new System.Drawing.Point(0, 83);
+            this.textMem.Name = "textMem";
+            this.textMem.Size = new System.Drawing.Size(47, 40);
+            this.textMem.TabIndex = 2;
+            this.textMem.Text = "M";
+            this.textMem.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textMem.Visible = false;
             // 
             // Form1
             // 
@@ -432,6 +467,10 @@
             this.ResumeLayout(false);
             this.PerformLayout();
         }
+
+        private System.Windows.Forms.TextBox texterror;
+
+        private System.Windows.Forms.TextBox textMem;
 
         private System.Windows.Forms.Button btn_mr;
 
